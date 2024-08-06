@@ -46,4 +46,4 @@ This project examines the evolution of data management in the real estate sector
 
 ## Run the ETL Pipeline
 
-- Download [Postgres Pipeline](
+- Download [Postgres Pipeline](postgres_pipeline.py)
