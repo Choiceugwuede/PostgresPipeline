@@ -44,6 +44,31 @@ This project examines the evolution of data management in the real estate sector
 
 - Download Visual Studio Code [here](https://code.visualstudio.com/download)
 
+## Configuration
+
+1. ** Set up PostgreSQL Database:**
+    - Download [Postgres pipeline script](Update the PostgreSQL connection settings in database connection function in Loading Layer to match your local setup:
+      ```python
+      connection=psycopg2.connect(
+      host='localhost',
+      database='postgres',
+      port='5432',
+      user='your-username',
+      password='your-password'
+      )
+      ```
+      
+2.  **Update File Paths:**
+   - The ETL pipeline may require local file paths to be updated. Open the relevant scripts (e.g., `extract.py`, `transform.py`, `load.py`) and update the file paths to match the directories on your local system.
+
+    Example in `extract.py`:
+    ```python
+    raw_data_path = '/path/to/your/raw/data'
+    processed_data_path = '/path/to/your/processed/data'
+    ```
+    
+
 ## Run the ETL Pipeline
 
 - Download [Postgres Pipeline](postgres_pipeline.py)
+  Using Ananconda Prompt, 
