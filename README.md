@@ -89,7 +89,7 @@ For more details on the processes, refer to the [PostgresPipeline Jupyter Notebo
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
-Special thanks to Zipco Real Estate Agency for providing the data and resources to make this project possible.
+Special thanks to Amdari for the support to make this project possible.
     
 
 
