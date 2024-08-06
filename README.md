@@ -47,7 +47,7 @@ This project examines the evolution of data management in the real estate sector
 ## Configuration
 
 1. ** Set up PostgreSQL Database:**
-    - Download [Postgres pipeline script](Update the PostgreSQL connection settings in database connection function in Loading Layer to match your local setup:
+    - Download [Postgres pipeline script](postgres_pipeline.py). Update the PostgreSQL connection settings in database connection function in Loading Layer to match your local setup:
       ```python
       connection=psycopg2.connect(
       host='localhost',
@@ -59,16 +59,40 @@ This project examines the evolution of data management in the real estate sector
       ```
       
 2.  **Update File Paths:**
-   - The ETL pipeline may require local file paths to be updated. Open the relevant scripts (e.g., `extract.py`, `transform.py`, `load.py`) and update the file paths to match the directories on your local system.
+   - The ETL pipeline may require local file paths to be updated to match the directories on your local system.
+      Example in Loading Layer 
+      ```python
+     fact_csv_path=r'C:\Users\USER\PostgresPipeline Project\property_fact.csv'
+     load_data_from_csv_to_table(fact_csv_path,'zapbank.fact_table'):
+     ```
 
-    Example in `extract.py`:
-    ```python
-    raw_data_path = '/path/to/your/raw/data'
-    processed_data_path = '/path/to/your/processed/data'
-    ```
+## Usage
+
+**Run the ETL pipeline using Anaconda Prompt:**
+
+- Open Anaconda Prompt.
+    - Navigate to the project directory:
+      ```bash
+      cd path\to\your\project
+      ```
+    
+    - Run the ETL pipeline:
+      ```bash
+      python postgres_pipeline.py
+      ```
+
+## Documentation
+
+For more details on the processes, refer to the [PostgresPipeline Jupyter Notebook](./data_dictionary.csv).
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+Special thanks to Zipco Real Estate Agency for providing the data and resources to make this project possible.
     
 
-## Run the ETL Pipeline
 
-- Download [Postgres Pipeline](postgres_pipeline.py)
-  Using Ananconda Prompt, 
