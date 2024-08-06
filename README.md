@@ -46,7 +46,7 @@ This project examines the evolution of data management in the real estate sector
 
 ## Configuration
 
-1. ** Set up PostgreSQL Database:**
+1. **Set up PostgreSQL Database:**
     - Download [Postgres pipeline script](postgres_pipeline.py). Update the PostgreSQL connection settings in database connection function in Loading Layer to match your local setup:
       ```python
       connection=psycopg2.connect(
