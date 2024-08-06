@@ -83,10 +83,7 @@ This project examines the evolution of data management in the real estate sector
 
 ## Documentation
 
-For more details on the processes, refer to the [PostgresPipeline Jupyter Notebook](./data_dictionary.csv).
-
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request.
+For more details on the processes, refer to the [PostgresPipeline Jupyter Notebook](Postgres_Pipeline.ipynb).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
