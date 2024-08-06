@@ -58,7 +58,7 @@ This project examines the evolution of data management in the real estate sector
       )
       ```
       
-2.  **Update File Paths:**
+2. **Update File Paths:**
    - The ETL pipeline may require local file paths to be updated to match the directories on your local system.
       Example in Loading Layer 
       ```python
