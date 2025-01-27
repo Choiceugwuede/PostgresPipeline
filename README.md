@@ -85,8 +85,6 @@ This project examines the evolution of data management in the real estate sector
 
 For more details on the processes, refer to the [PostgresPipeline Jupyter Notebook](Postgres_Pipeline.ipynb).
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 Special thanks to Amdari for the support to make this project possible.
